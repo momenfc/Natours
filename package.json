@@ -1,0 +1,22 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "learn",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass sass/main.scss css/style.css -w",
+    "compile-sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat-css": "concat -o css/style.concat.css css/all.min.css css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress-css": "node-sass css/style.concat.css css/style.min.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0"
+  }
+}

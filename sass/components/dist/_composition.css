@@ -1,0 +1,11 @@
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  position: absolute;
+}
+.composition__photo__p1 {
+  top: 0;
+  left: 20px;
+}
